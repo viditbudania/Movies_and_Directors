@@ -4,11 +4,11 @@ import './App.css';
 //import {Router, Route, browserHistory} from 'react-router'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 
-//import Root from './components/root';
-import Movies from './components/movies';
-import Directors from './components/directors';
-import ShowMovieCard from './components/showMovieCard'
-import ShowDirectorCard from './components/showDirectorCard'
+//import Root from './components/Root';
+import Movies from './components/Movies';
+import Directors from './components/Directors';
+import ShowMovieCard from './components/ShowMovieCard'
+import ShowDirectorCard from './components/ShowDirectorCard'
 
 
 

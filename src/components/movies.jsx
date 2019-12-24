@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "../App.css";
-import Popup from "./addMovie";
-import PopupEdit from "./editMovie";
-// import PopupShow from "./showMovieCard";
+import Popup from "./AddMovie";
+import PopupEdit from "./EditMovie";
+// import PopupShow from "./ShowMovieCard";
 import { Link } from "react-router-dom";
 
 // import { async } from "q";
@@ -128,7 +128,7 @@ class movies extends Component {
       popup: !this.state.popup
     });
 
-    await fetch("http://localhost:4000/api/movies/", {
+    await fetch("http://ec2-13-235-135-20.ap-south-1.compute.amazonaws.com:4000/api/movies/", {
       method: "POST",
       headers: {
         Accept: "application/json",

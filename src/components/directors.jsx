@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import '../App.css';
 // import { async } from "q";
-import Popup from "./addDirector";
-import PopupEdit from "./editDirector";
+import Popup from "./AddDirector";
+import PopupEdit from "./EditDirector";
 import { Link } from 'react-router-dom'
 
 // import { async } from "q";
@@ -17,7 +17,7 @@ class directors extends Component {
     id: null
   };
   componentDidMount() {
-    fetch("http://localhost:4000/api/directors")
+    fetch("http://ec2-13-235-135-20.ap-south-1.compute.amazonaws.com:4000/api/directors")
       .then(boardData => {
         return boardData.json();
       })
@@ -29,7 +29,7 @@ class directors extends Component {
   }
   onDelete = async (element) =>{
     console.log(element["ID"])
-    await fetch('http://localhost:4000/api/directors/' + element["ID"],{
+    await fetch('http://ec2-13-235-135-20.ap-south-1.compute.amazonaws.com:4000/api/directors/' + element["ID"],{
          method: "DELETE"
 
      });
@@ -43,7 +43,7 @@ class directors extends Component {
     this.state.popup
     ? this.setState({ popup: false })
     : this.setState({ popup: true });
-    await fetch("http://localhost:4000/api/directors/", {
+    await fetch("http://ec2-13-235-135-20.ap-south-1.compute.amazonaws.com:4000/api/directors/", {
         method: "POST",
         headers: {
           Accept: "application/json",
@@ -70,7 +70,7 @@ class directors extends Component {
       //console.log(event.target)
     let input = document.querySelectorAll(".element input");
     console.log(input[0].value);
-    await fetch("http://localhost:4000/api/directors/" + this.state.id["ID"], {
+    await fetch("http://ec2-13-235-135-20.ap-south-1.compute.amazonaws.com:4000/api/directors/" + this.state.id["ID"], {
       method: "PUT",
       headers: {
         Accept: "application/json",

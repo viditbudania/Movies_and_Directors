@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-function addDirector (props)  {
+function AddDirector (props)  {
      
         return ( 
             <div className = "layer">
@@ -29,4 +29,4 @@ function addDirector (props)  {
     }
 
  
-export default addDirector;
+export default AddDirector;

@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 
 
-function editDirector (props) {
+function EditDirector (props) {
         return ( 
             <div className = "layer">
             <div className="popup-header">
@@ -25,4 +25,4 @@ function editDirector (props) {
     }
 
  
-export default editDirector;
+export default EditDirector;

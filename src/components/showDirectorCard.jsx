@@ -7,7 +7,7 @@ class addMovies extends Component {
     movie:[]
   };
 componentDidMount(){
-  fetch("http://localhost:4000/api/movies/" + this.props.location.state["ID"], {
+  fetch("http://ec2-13-235-135-20.ap-south-1.compute.amazonaws.com:4000/api/movies/" + this.props.location.state["ID"], {
         method: "GET"
       })
       .then(boardData => {

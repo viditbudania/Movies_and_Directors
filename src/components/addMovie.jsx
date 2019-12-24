@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 
-class addMovies extends Component {
+class AddMovies extends Component {
     state = {  }
     render() { 
         return (
@@ -76,4 +76,4 @@ class addMovies extends Component {
 }
  
 
-export default addMovies;
+export default AddMovies;
